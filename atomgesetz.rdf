@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz/"
+     xml:base="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:opla-sd="http://ontologydesignpatterns.org/opla-sd#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz">
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/action.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/expression.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/legal-action.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/legal-role.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-core.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-extended.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-rules.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/lkif-top.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/mereology.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/norm.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/process.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/relative-places.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/role.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time-modification.owl"/>
+        <owl:imports rdf:resource="http://www.estrellaproject.org/lkif-core/time.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPosition -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPosition"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionX -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionX"/>
+    
+
+
+    <!-- http://ontologydesignpatterns.org/opla-sd#entityPositionY -->
+
+    <owl:AnnotationProperty rdf:about="http://ontologydesignpatterns.org/opla-sd#entityPositionY"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#hasSpatiotemporalExtent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#hasSpatiotemporalExtent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#SpatiotemporalExtent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#providesParticipantRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#providesParticipantRole">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#ParticipantRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#subeventOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#subeventOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#Event">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">159.5792208576562</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">150.38980998859293</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#ParticipantRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#ParticipantRole">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">289.62271237532957</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">349.5708080853905</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#SpatiotemporalExtent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ole/ontologies/2025/4/atomgesetz#SpatiotemporalExtent">
+        <opla-sd:entityPosition>
+            <rdf:Description>
+                <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">569.9444940330884</opla-sd:entityPositionX>
+                <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">230.0369556222727</opla-sd:entityPositionY>
+                <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+            </rdf:Description>
+        </opla-sd:entityPosition>
+    </owl:Class>
+    <rdf:Description>
+        <opla-sd:entityPositionX rdf:datatype="http://www.w3.org/2001/XMLSchema#double">218.68347376050122</opla-sd:entityPositionX>
+        <opla-sd:entityPositionY rdf:datatype="http://www.w3.org/2001/XMLSchema#double">274.4919697005127</opla-sd:entityPositionY>
+        <rdfs:comment xml:lang="en">This is an entity positioning annotation generated by CoModIDE (https://comodide.com/). Removing this annotation will break rendering the CoModIDE schema diagram view.</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
